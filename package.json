@@ -6,7 +6,8 @@
   "scripts": {
     "followbot": "node followerbot",
     "posterbot": "node posterbot",
-    "downloaderbot": "node downloaderbot"
+    "downloaderbot": "node downloaderbot",
+    "tinderbot": "node tinderbot"
   },
   "author": "",
   "license": "ISC",
