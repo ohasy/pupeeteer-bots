@@ -1,0 +1,66 @@
+diff --git a/node_modules/puppeteer-extra/dist/index.cjs.js b/node_modules/puppeteer-extra/dist/index.cjs.js
+index 7e2b216..f313d99 100644
+--- a/node_modules/puppeteer-extra/dist/index.cjs.js
++++ b/node_modules/puppeteer-extra/dist/index.cjs.js
+@@ -447,14 +447,15 @@ const addExtra = (puppeteer) => new PuppeteerExtra(puppeteer);
+  * @private
+  */
+ function requireVanillaPuppeteer() {
++
+     try {
+-        return [require('puppeteer-core'), undefined];
++        return [require('puppeteer'), undefined];
+     }
+     catch (_) {
+         // noop
+     }
+     try {
+-        return [require('puppeteer'), undefined];
++        return [require('puppeteer-core'), undefined];
+     }
+     catch (err) {
+         return [undefined, err];
+diff --git a/node_modules/puppeteer-extra/dist/index.esm.js b/node_modules/puppeteer-extra/dist/index.esm.js
+index fdcb6b4..d492636 100644
+--- a/node_modules/puppeteer-extra/dist/index.esm.js
++++ b/node_modules/puppeteer-extra/dist/index.esm.js
+@@ -441,14 +441,15 @@ const addExtra = (puppeteer) => new PuppeteerExtra(puppeteer);
+  * @private
+  */
+ function requireVanillaPuppeteer() {
++
+     try {
+-        return [require('puppeteer-core'), undefined];
++        return [require('puppeteer'), undefined];
+     }
+     catch (_) {
+         // noop
+     }
+     try {
+-        return [require('puppeteer'), undefined];
++        return [require('puppeteer-core'), undefined];
+     }
+     catch (err) {
+         return [undefined, err];
+diff --git a/node_modules/puppeteer-extra/dist/index.js b/node_modules/puppeteer-extra/dist/index.js
+index a8cc6ef..0d6e4ef 100644
+--- a/node_modules/puppeteer-extra/dist/index.js
++++ b/node_modules/puppeteer-extra/dist/index.js
+@@ -442,14 +442,15 @@ exports.addExtra = (puppeteer) => new PuppeteerExtra(puppeteer);
+  * @private
+  */
+ function requireVanillaPuppeteer() {
++
+     try {
+-        return [require('puppeteer-core'), undefined];
++        return [require('puppeteer'), undefined];
+     }
+     catch (_) {
+         // noop
+     }
+     try {
+-        return [require('puppeteer'), undefined];
++        return [require('puppeteer-core'), undefined];
+     }
+     catch (err) {
+         return [undefined, err];
