@@ -1,6 +1,6 @@
 const puppeteer = require("puppeteer");
-const { tinderCred } = require("./credentials");
-const {username, password} = tinderCred;
+const {username, password} = require("./config").tinderbot.creds;
+
 const fs = require("fs");
 const notifier = require("node-notifier");
 const player = require("play-sound")((opts = {}));

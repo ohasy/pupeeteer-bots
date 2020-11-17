@@ -52,6 +52,9 @@ module.exports = {
         instagramLoginUrl: "https://instagram.com/accounts/login",
         instagramUrl: "https://instagram.com",
         cookiesPath: "./DB/posterbot_cookie.json"
+    },
+    tinderbot: {
+        creds: credentials.tinderCred
     }
 }
 
