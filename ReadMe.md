@@ -12,6 +12,8 @@ module.exports = {
     password: "pass"
 }
 
+only supports public subreddits
+
 
 cron jobs
 // -> download stuff with cron job.
